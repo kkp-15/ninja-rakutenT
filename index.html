@@ -26,7 +26,7 @@
 <meta property="og:url" content="https://ninja-rakuten.kkpwebninja.com/">
 <meta name="twitter:card" content="summary_large_image">
 
-<!-- Schema.org：Breadcrumb / ItemList（人気エリア） / FAQ / WebSite(SearchAction) -->
+<!-- Schema.org：Breadcrumb / ItemList / FAQ / WebSite(SearchAction) -->
 <script type="application/ld+json">
 {
   "@context":"https://schema.org",
@@ -64,9 +64,9 @@
   "@context":"https://schema.org",
   "@type":"FAQPage",
   "mainEntity":[
-    {"@type":"Question","name":"空室はどこで確認できる？","acceptedAnswer":{"@type":"Answer","text":"楽天トラベルの『隠れ家』特集ページから日付・人数を指定して検索できる。"}},
-    {"@type":"Question","name":"最短で予約するには？","acceptedAnswer":{"@type":"Answer","text":"本ページのボタンから公式特集に移動し、そのまま条件入力に進むのが早い。"}},
-    {"@type":"Question","name":"家族向けの隠れ家宿は？","acceptedAnswer":{"@type":"Answer","text":"貸切風呂・和室・部屋食などの条件を絞ると探しやすい。"}}
+    {"@type":"Question","name":"空室はどこで確認できる？","acceptedAnswer":{"@type":"Answer","text":"楽天トラベルの『隠れ家』特集ページから日付・人数を指定して検索できます。"}},
+    {"@type":"Question","name":"最短で予約するには？","acceptedAnswer":{"@type":"Answer","text":"本ページのボタンから公式特集に移動し、そのまま条件入力に進むのが早いです。"}},
+    {"@type":"Question","name":"家族向けの隠れ家宿は？","acceptedAnswer":{"@type":"Answer","text":"貸切風呂・和室・部屋食などの条件を絞ると探しやすいです。"}}
   ]
 }
 </script>
@@ -115,9 +115,7 @@
   }
   h1{margin:0 0 8px; font-size:clamp(28px,4.6vw,40px); font-weight:800; letter-spacing:.02em}
   .lead{margin:0 auto 6px; max-width:820px; font-size:clamp(15px,2.4vw,18px); color:var(--muted)}
-  .trustnote{
-    margin:10px auto 0; font-size:12px; color:#64748b; text-align:center;
-  }
+  .trustnote{ margin:10px auto 0; font-size:12px; color:#64748b; text-align:center; }
   .wrap{max-width:980px; margin:0 auto; padding:18px 16px}
   .notice{
     background:#fff7db; color:#6a5300; border:1px solid #ffe58f; border-radius:10px;
@@ -185,16 +183,16 @@
     <a href="#faq">FAQ</a>
   </nav>
 
-  <!-- 1. 今すぐ空室確認（主要導線） -->
+  <!-- 1. 今すぐ空室確認 -->
   <section id="start" class="panel" aria-labelledby="start-title">
     <h2 id="start-title">今すぐ空室確認・予約に進む</h2>
     <p style="margin-top:0">楽天トラベルの『隠れ家』特集へ。日付・人数・エリアを指定して検索できます。</p>
 
     <div class="btns" role="group" aria-label="主要アクション">
-      <!-- ✅ もしもアフィリエイト：hrefは改変しない -->
+      <!-- ✅ アフィリエイト：どこでもリンク（ベースは共通） -->
       <a class="cta" target="_blank" rel="nofollow noopener sponsored"
          href="//af.moshimo.com/af/c/click?a_id=5140685&p_id=55&pc_id=55&pl_id=624&url=https%3A%2F%2Ftravel.rakuten.co.jp%2Fshare%2Fbatch%2Frrg_pg%2Fpgenerator%2Fhotel%2Fid39%2Fall_prefectures%2Findex.html"
-         aria-label="楽天トラベルの隠れ家特集で空室を確認する" onmouseenter="this.rel='nofollow noopener sponsored prefetch'">
+         aria-label="楽天トラベルの隠れ家特集で空室を確認する">
         空室を確認する（公式）
       </a>
       <a class="cta secondary" target="_blank" rel="nofollow noopener sponsored"
@@ -204,12 +202,12 @@
       </a>
     </div>
 
-    <!-- もしもインプレッションピクセル（ページ内1つだけ） -->
+    <!-- もしもインプレッションピクセル（1ページ1つ） -->
     <img src="//i.moshimo.com/af/i/impression?a_id=5140685&p_id=55&pc_id=55&pl_id=624" width="1" height="1" style="border:none;" alt="" loading="lazy">
 
     <p class="note">※ 公式ページで条件を入力して検索。料金/空室は随時変動します。</p>
 
-    <!-- 予約直行フォーム：キーワード→楽天トラベル検索へ -->
+    <!-- 予約直行フォーム -->
     <div class="panel" style="margin-top:12px">
       <h3 style="margin-top:0">キーワードで探す</h3>
       <form id="affSearch" onsubmit="return goAffSearch()" role="search" aria-label="隠れ家宿を検索">
@@ -232,87 +230,96 @@
         <span class="tag">静岡</span>
         <h3>熱海・伊豆｜海景×露天×離れ</h3>
         <p>都心から近く検索需要が常に高い定番。少室・貸切風呂・海を望む客室で“隠れ家”度UP。</p>
-        <div class="btns">
-          <a class="cta" target="_blank" rel="nofollow noopener sponsored"
-             href="//af.moshimo.com/af/c/click?a_id=5140685&p_id=55&pc_id=55&pl_id=624&url=https%3A%2F%2Ftravel.rakuten.co.jp%2Fshare%2Fbatch%2Frrg_pg%2Fpgenerator%2Fhotel%2Fid39%2Fall_prefectures%2Findex.html">熱海・伊豆で空室を見る</a>
-        </div>
+        <div class="btns"><a class="cta" target="_blank" rel="nofollow noopener sponsored"
+          href="//af.moshimo.com/af/c/click?a_id=5140685&p_id=55&pc_id=55&pl_id=624&url=https%3A%2F%2Ftravel.rakuten.co.jp%2Fshare%2Fbatch%2Frrg_pg%2Fpgenerator%2Fhotel%2Fid39%2Fall_prefectures%2Findex.html">熱海・伊豆で空室を見る</a></div>
       </article>
 
       <article class="item" id="kusatsu">
         <span class="tag">群馬</span>
         <h3>草津温泉｜湯畑徒歩圏×貸切湯</h3>
         <p>検索人気・実需ともに強い王道温泉地。夜の静けさ重視なら裏草津や離れ客室が狙い目。</p>
-        <div class="btns"><a class="cta" target="_blank" rel="nofollow noopener sponsored" href="//af.moshimo.com/af/c/click?a_id=5140685&p_id=55&pc_id=55&pl_id=624&url=https%3A%2F%2Ftravel.rakuten.co.jp%2Fshare%2Fbatch%2Frrg_pg%2Fpgenerator%2Fhotel%2Fid39%2Fall_prefectures%2Findex.html">草津で空室を見る</a></div>
+        <div class="btns"><a class="cta" target="_blank" rel="nofollow noopener sponsored"
+          href="//af.moshimo.com/af/c/click?a_id=5140685&p_id=55&pc_id=55&pl_id=624&url=https%3A%2F%2Ftravel.rakuten.co.jp%2Fshare%2Fbatch%2Frrg_pg%2Fpgenerator%2Fhotel%2Fid39%2Fall_prefectures%2Findex.html">草津で空室を見る</a></div>
       </article>
 
       <article class="item" id="nasu-nikko">
         <span class="tag">栃木</span>
         <h3>那須・日光・鬼怒川｜高原×渓谷</h3>
         <p>那須の静けさと、日光・鬼怒川の温泉を広域で検索されやすい組み合わせでカバー。</p>
-        <div class="btns"><a class="cta" target="_blank" rel="nofollow noopener sponsored" href="//af.moshimo.com/af/c/click?a_id=5140685&p_id=55&pc_id=55&pl_id=624&url=https%3A%2F%2Ftravel.rakuten.co.jp%2Fshare%2Fbatch%2Frrg_pg%2Fpgenerator%2Fhotel%2Fid39%2Fall_prefectures%2Findex.html">那須・日光で空室を見る</a></div>
+        <div class="btns"><a class="cta" target="_blank" rel="nofollow noopener sponsored"
+          href="//af.moshimo.com/af/c/click?a_id=5140685&p_id=55&pc_id=55&pl_id=624&url=https%3A%2F%2Ftravel.rakuten.co.jp%2Fshare%2Fbatch%2Frrg_pg%2Fpgenerator%2Fhotel%2Fid39%2Fall_prefectures%2Findex.html">那須・日光で空室を見る</a></div>
       </article>
 
       <article class="item" id="hakone">
         <span class="tag">神奈川</span>
         <h3>箱根｜強羅・仙石原の静エリア</h3>
         <p>検索回数が常に高水準。強羅や仙石原などの離れ・部屋食・貸切風呂は“隠れ家”と好相性。</p>
-        <div class="btns"><a class="cta" target="_blank" rel="nofollow noopener sponsored" href="//af.moshimo.com/af/c/click?a_id=5140685&p_id=55&pc_id=55&pl_id=624&url=https%3A%2F%2Ftravel.rakuten.co.jp%2Fshare%2Fbatch%2Frrg_pg%2Fpgenerator%2Fhotel%2Fid39%2Fall_prefectures%2Findex.html">箱根で空室を見る</a></div>
+        <div class="btns"><a class="cta" target="_blank" rel="nofollow noopener sponsored"
+          href="//af.moshimo.com/af/c/click?a_id=5140685&p_id=55&pc_id=55&pl_id=624&url=https%3A%2F%2Ftravel.rakuten.co.jp%2Fshare%2Fbatch%2Frrg_pg%2Fpgenerator%2Fhotel%2Fid39%2Fall_prefectures%2Findex.html">箱根で空室を見る</a></div>
       </article>
 
       <article class="item" id="karuizawa">
         <span class="tag">長野</span>
         <h3>軽井沢｜森の別荘風リトリート</h3>
         <p>別荘地キーワードで通年検索。独立棟・少室・森ビューの客室タイプを要チェック。</p>
-        <div class="btns"><a class="cta" target="_blank" rel="nofollow noopener sponsored" href="//af.moshimo.com/af/c/click?a_id=5140685&p_id=55&pc_id=55&pl_id=624&url=https%3A%2F%2Ftravel.rakuten.co.jp%2Fshare%2Fbatch%2Frrg_pg%2Fpgenerator%2Fhotel%2Fid39%2Fall_prefectures%2Findex.html">軽井沢で空室を見る</a></div>
+        <div class="btns"><a class="cta" target="_blank" rel="nofollow noopener sponsored"
+          href="//af.moshimo.com/af/c/click?a_id=5140685&p_id=55&pc_id=55&pl_id=624&url=https%3A%2F%2Ftravel.rakuten.co.jp%2Fshare%2Fbatch%2Frrg_pg%2Fpgenerator%2Fhotel%2Fid39%2Fall_prefectures%2Findex.html">軽井沢で空室を見る</a></div>
       </article>
 
       <article class="item" id="kawaguchiko">
         <span class="tag">山梨</span>
         <h3>富士五湖・河口湖｜絶景×露天</h3>
         <p>“富士山ビュー”の検索意図が強いエリア。ビューバス・部屋露天・少室タイプに注目。</p>
-        <div class="btns"><a class="cta" target="_blank" rel="nofollow noopener sponsored" href="//af.moshimo.com/af/c/click?a_id=5140685&p_id=55&pc_id=55&pl_id=624&url=https%3A%2F%2Ftravel.rakuten.co.jp%2Fshare%2Fbatch%2Frrg_pg%2Fpgenerator%2Fhotel%2Fid39%2Fall_prefectures%2Findex.html">河口湖で空室を見る</a></div>
+        <div class="btns"><a class="cta" target="_blank" rel="nofollow noopener sponsored"
+          href="//af.moshimo.com/af/c/click?a_id=5140685&p_id=55&pc_id=55&pl_id=624&url=https%3A%2F%2Ftravel.rakuten.co.jp%2Fshare%2Fbatch%2Frrg_pg%2Fpgenerator%2Fhotel%2Fid39%2Fall_prefectures%2Findex.html">河口湖で空室を見る</a></div>
       </article>
 
       <article class="item" id="shirahama">
         <span class="tag">和歌山</span>
         <h3>白浜温泉｜南紀のオーシャンフロント</h3>
         <p>温泉×海の二枚看板で検索が強い。海景露天・客室露天・高層フロアが人気。</p>
-        <div class="btns"><a class="cta" target="_blank" rel="nofollow noopener sponsored" href="//af.moshimo.com/af/c/click?a_id=5140685&p_id=55&pc_id=55&pl_id=624&url=https%3A%2F%2Ftravel.rakuten.co.jp%2Fshare%2Fbatch%2Frrg_pg%2Fpgenerator%2Fhotel%2Fid39%2Fall_prefectures%2Findex.html">白浜で空室を見る</a></div>
+        <div class="btns"><a class="cta" target="_blank" rel="nofollow noopener sponsored"
+          href="//af.moshimo.com/af/c/click?a_id=5140685&p_id=55&pc_id=55&pl_id=624&url=https%3A%2F%2Ftravel.rakuten.co.jp%2Fshare%2Fbatch%2Frrg_pg%2Fpgenerator%2Fhotel%2Fid39%2Fall_prefectures%2Findex.html">白浜で空室を見る</a></div>
       </article>
 
       <article class="item" id="beppu-yufuin">
         <span class="tag">大分</span>
         <h3>別府・由布院｜源泉×貸切湯</h3>
         <p>国内屈指の検索＆実需。“地獄めぐり”“金鱗湖”など観光とセットの需要も厚い。</p>
-        <div class="btns"><a class="cta" target="_blank" rel="nofollow noopener sponsored" href="//af.moshimo.com/af/c/click?a_id=5140685&p_id=55&pc_id=55&pl_id=624&url=https%3A%2F%2Ftravel.rakuten.co.jp%2Fshare%2Fbatch%2Frrg_pg%2Fpgenerator%2Fhotel%2Fid39%2Fall_prefectures%2Findex.html">別府・由布院で空室を見る</a></div>
+        <div class="btns"><a class="cta" target="_blank" rel="nofollow noopener sponsored"
+          href="//af.moshimo.com/af/c/click?a_id=5140685&p_id=55&pc_id=55&pl_id=624&url=https%3A%2F%2Ftravel.rakuten.co.jp%2Fshare%2Fbatch%2Frrg_pg%2Fpgenerator%2Fhotel%2Fid39%2Fall_prefectures%2Findex.html">別府・由布院で空室を見る</a></div>
       </article>
 
       <article class="item" id="kurokawa">
         <span class="tag">熊本</span>
         <h3>黒川温泉｜里山の離れ</h3>
         <p>“離れ”“露天付き客室”の検索と相性が良い静寂の名地。カップル・夫婦旅に。</p>
-        <div class="btns"><a class="cta" target="_blank" rel="nofollow noopener sponsored" href="//af.moshimo.com/af/c/click?a_id=5140685&p_id=55&pc_id=55&pl_id=624&url=https%3A%2F%2Ftravel.rakuten.co.jp%2Fshare%2Fbatch%2Frrg_pg%2Fpgenerator%2Fhotel%2Fid39%2Fall_prefectures%2Findex.html">黒川で空室を見る</a></div>
+        <div class="btns"><a class="cta" target="_blank" rel="nofollow noopener sponsored"
+          href="//af.moshimo.com/af/c/click?a_id=5140685&p_id=55&pc_id=55&pl_id=624&url=https%3A%2F%2Ftravel.rakuten.co.jp%2Fshare%2Fbatch%2Frrg_pg%2Fpgenerator%2Fhotel%2Fid39%2Fall_prefectures%2Findex.html">黒川で空室を見る</a></div>
       </article>
 
       <article class="item" id="hokkaido-onsen">
         <span class="tag">北海道</span>
         <h3>登別・洞爺・定山渓｜名湯エリア連合</h3>
         <p>“北海道 温泉”の広域検索に強い3大エリアを一括カバー。客室露天・貸切サウナも増加。</p>
-        <div class="btns"><a class="cta" target="_blank" rel="nofollow noopener sponsored" href="//af.moshimo.com/af/c/click?a_id=5140685&p_id=55&pc_id=55&pl_id=624&url=https%3A%2F%2Ftravel.rakuten.co.jp%2Fshare%2Fbatch%2Frrg_pg%2Fpgenerator%2Fhotel%2Fid39%2Fall_prefectures%2Findex.html">北海道で空室を見る</a></div>
+        <div class="btns"><a class="cta" target="_blank" rel="nofollow noopener sponsored"
+          href="//af.moshimo.com/af/c/click?a_id=5140685&p_id=55&pc_id=55&pl_id=624&url=https%3A%2F%2Ftravel.rakuten.co.jp%2Fshare%2Fbatch%2Frrg_pg%2Fpgenerator%2Fhotel%2Fid39%2Fall_prefectures%2Findex.html">北海道で空室を見る</a></div>
       </article>
 
       <article class="item" id="okinawa">
         <span class="tag">沖縄</span>
         <h3>沖縄本島（恩納・読谷）｜リゾート×静けさ</h3>
         <p>“沖縄 ホテル”の検索母数が非常に大きい。部屋数少なめ・ヴィラ型・独立棟が狙い目。</p>
-        <div class="btns"><a class="cta" target="_blank" rel="nofollow noopener sponsored" href="//af.moshimo.com/af/c/click?a_id=5140685&p_id=55&pc_id=55&pl_id=624&url=https%3A%2F%2Ftravel.rakuten.co.jp%2Fshare%2Fbatch%2Frrg_pg%2Fpgenerator%2Fhotel%2Fid39%2Fall_prefectures%2Findex.html">沖縄本島で空室を見る</a></div>
+        <div class="btns"><a class="cta" target="_blank" rel="nofollow noopener sponsored"
+          href="//af.moshimo.com/af/c/click?a_id=5140685&p_id=55&pc_id=55&pl_id=624&url=https%3A%2F%2Ftravel.rakuten.co.jp%2Fshare%2Fbatch%2Frrg_pg%2Fpgenerator%2Fhotel%2Fid39%2Fall_prefectures%2Findex.html">沖縄本島で空室を見る</a></div>
       </article>
 
       <article class="item" id="ishigaki-miyako">
         <span class="tag">沖縄/離島</span>
         <h3>石垣島・宮古島｜離島の静けさ</h3>
         <p>“離島 リゾート”の高需要ワード。独立ヴィラ・プライベートビーチ系と好相性。</p>
-        <div class="btns"><a class="cta" target="_blank" rel="nofollow noopener sponsored" href="//af.moshimo.com/af/c/click?a_id=5140685&p_id=55&pc_id=55&pl_id=624&url=https%3A%2F%2Ftravel.rakuten.co.jp%2Fshare%2Fbatch%2Frrg_pg%2Fpgenerator%2Fhotel%2Fid39%2Fall_prefectures%2Findex.html">石垣・宮古で空室を見る</a></div>
+        <div class="btns"><a class="cta" target="_blank" rel="nofollow noopener sponsored"
+          href="//af.moshimo.com/af/c/click?a_id=5140685&p_id=55&pc_id=55&pl_id=624&url=https%3A%2F%2Ftravel.rakuten.co.jp%2Fshare%2Fbatch%2Frrg_pg%2Fpgenerator%2Fhotel%2Fid39%2Fall_prefectures%2Findex.html">石垣・宮古で空室を見る</a></div>
       </article>
 
     </div>
@@ -378,33 +385,78 @@
   </div>
 </div>
 
-<!-- モバイル固定CTA（CV最優先） -->
+<!-- モバイル固定CTA -->
 <div class="sticky-cta" role="region" aria-label="空室確認へのショートカット">
   <a class="cta" target="_blank" rel="nofollow noopener sponsored"
      href="//af.moshimo.com/af/c/click?a_id=5140685&p_id=55&pc_id=55&pl_id=624&url=https%3A%2F%2Ftravel.rakuten.co.jp%2Fshare%2Fbatch%2Frrg_pg%2Fpgenerator%2Fhotel%2Fid39%2Fall_prefectures%2Findex.html"
      aria-label="今すぐ空室を確認（公式）">今すぐ空室を確認（公式）</a>
 </div>
 
-<!-- 検索フォーム用スクリプト（ASP経由で公式検索へ直行）＋CTA計測 -->
+<!-- 検索・地域差し替え（安定版）＋計測 -->
 <script>
+  // もしも：どこでもリンクのベース（あなたのIDのまま）
   const MOSHIMO_BASE = "//af.moshimo.com/af/c/click?a_id=5140685&p_id=55&pc_id=55&pl_id=624&url=";
+
+  // 楽天：安定検索エンドポイント（simpleSearch）
   function buildRakutenSearchUrl(keyword){
-    return "https://travel.rakuten.co.jp/search?keyword=" + encodeURIComponent(keyword.trim());
+    const kw = (keyword || "").trim();
+    if(!kw){
+      return "https://travel.rakuten.co.jp/share/batch/rrg_pg/pgenerator/hotel/id39/all_prefectures/index.html";
+    }
+    return "https://travel.rakuten.co.jp/yado/simpleSearch/?keyword=" + encodeURIComponent(kw);
   }
+
+  // 検索フォーム送信：もしも経由で公式検索へ
   function goAffSearch(){
-    const kw = document.getElementById('q').value || "";
-    if(!kw.trim()){ document.getElementById('q').focus(); return false; }
-    const target = buildRakutenSearchUrl(kw);
+    const box = document.getElementById('q');
+    const target = buildRakutenSearchUrl(box ? box.value : "");
     const affUrl = MOSHIMO_BASE + encodeURIComponent(target);
     window.open(affUrl, "_blank", "noopener");
-    if (typeof gtag === 'function') gtag('event','search',{event_category:'cta',event_label:kw.trim()});
+    if (typeof gtag === 'function' && box && box.value.trim()) {
+      gtag('event','search',{event_category:'cta',event_label:box.value.trim()});
+    }
     return false;
   }
+
   (function(){
+    // ?q= を検索欄へ反映（SERP拡張対策）
     const u = new URL(location.href);
     const kw = u.searchParams.get("q");
     if(kw){ const box = document.getElementById('q'); if(box){ box.value = kw; } }
-    // CTA計測
+
+    // 地域 -> キーワード
+    const regionMap = {
+      "atami-izu":      "熱海 伊豆 隠れ家",
+      "kusatsu":        "草津温泉 隠れ家",
+      "nasu-nikko":     "那須 日光 鬼怒川 隠れ家",
+      "hakone":         "箱根 強羅 仙石原 隠れ家",
+      "karuizawa":      "軽井沢 ヴィラ 隠れ家",
+      "kawaguchiko":    "富士五湖 河口湖 隠れ家",
+      "shirahama":      "白浜温泉 隠れ家",
+      "beppu-yufuin":   "別府 由布院 隠れ家",
+      "kurokawa":       "黒川温泉 隠れ家",
+      "hokkaido-onsen": "登別 洞爺 定山渓 隠れ家",
+      "okinawa":        "沖縄本島 恩納 読谷 隠れ家",
+      "ishigaki-miyako":"石垣島 宮古島 隠れ家"
+    };
+
+    // 地域ボタンの href を強制上書き（確実に差し替え）
+    function rewriteRegionLinks(){
+      Object.entries(regionMap).forEach(([id, kwd])=>{
+        document.querySelectorAll(`#${id} a`).forEach(a=>{
+          const target = buildRakutenSearchUrl(kwd);
+          a.setAttribute('href', MOSHIMO_BASE + encodeURIComponent(target));
+          a.setAttribute('rel', 'nofollow noopener sponsored');
+          a.setAttribute('target', '_blank');
+        });
+      });
+    }
+    if (document.readyState === 'loading'){
+      document.addEventListener('DOMContentLoaded', rewriteRegionLinks);
+    } else { rewriteRegionLinks(); }
+    window.addEventListener('load', ()=> setTimeout(rewriteRegionLinks, 0));
+
+    // CTAクリック計測（任意）
     document.querySelectorAll('a.cta').forEach(el=>{
       el.addEventListener('click', ()=>{
         if (typeof gtag === 'function') {
