@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
 
 <title>隠れ家宿 特集｜楽天トラベルで空室確認・予約【忍者の楽天別館】</title>
-<meta name="description" content="隠れ家宿を探す方向けまとめ。楽天トラベル『隠れ家』特集の公式リンクから空室確認・予約へ直行。箱根・軽井沢・河口湖・沖縄など人気エリアの情報と、貸切風呂・離れのポイントも。">
+<meta name="description" content="隠れ家宿を探す方向けまとめ。楽天トラベル『隠れ家』特集の公式リンクから空室確認・予約へ直行。箱根・軽井沢・河口湖・沖縄など人気エリアを“露天風呂付客室・貸切風呂・ヴィラ”などヒットしやすいキーワードで検索。">
 <link rel="canonical" href="https://ninja-rakuten.kkpwebninja.com/" />
 <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1" />
 
@@ -23,7 +23,7 @@
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="忍者の楽天別館">
 <meta property="og:title" content="隠れ家宿 特集｜楽天トラベルで空室確認・予約">
-<meta property="og:description" content="隠れ家宿を探している方へ。公式リンクから空室確認・予約へ直行。箱根・軽井沢・河口湖・沖縄ほか、貸切風呂・離れのチェックポイントも掲載。">
+<meta property="og:description" content="隠れ家宿を探している方へ。公式リンクから空室確認・予約へ直行。箱根・軽井沢・河口湖・沖縄ほか、露天風呂付客室や貸切風呂、ヴィラ検索がしやすい構成です。">
 <meta property="og:url" content="https://ninja-rakuten.kkpwebninja.com/">
 <meta property="og:image" content="https://ninja-rakuten.kkpwebninja.com/card.png">
 <meta name="twitter:card" content="summary_large_image">
@@ -138,7 +138,6 @@
   #footer{ margin:36px 0; text-align:center; color:#6b7280 }
   #footer a{text-decoration:underline}
   .sr-only{ position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0 }
-  /* モバイル固定CTA */
   .sticky-cta{ position:fixed; left:0; right:0; bottom:0; z-index:50; background:#ffffffee;
                backdrop-filter:saturate(180%) blur(8px); border-top:1px solid var(--border);
                padding:10px 12px; display:flex; justify-content:center }
@@ -161,7 +160,6 @@
 
 <div class="wrap">
 
-  <!-- 目次 -->
   <nav class="toc" aria-label="目次">
     <strong>目次</strong>
     <a href="#start">今すぐ空室確認</a> ／
@@ -170,13 +168,11 @@
     <a href="#faq">FAQ</a>
   </nav>
 
-  <!-- 1. 今すぐ空室確認 -->
   <section id="start" class="panel" aria-labelledby="start-title">
     <h2 id="start-title">今すぐ空室確認・予約に進む</h2>
     <p style="margin-top:0">楽天トラベルの『隠れ家』特集へ。日付・人数・エリアを指定して検索できます。</p>
 
     <div class="btns" role="group" aria-label="主要アクション">
-      <!-- どこでもリンク（共通ベース） -->
       <a class="cta" target="_blank" rel="nofollow noopener sponsored"
          href="//af.moshimo.com/af/c/click?a_id=5140685&p_id=55&pc_id=55&pl_id=624&url=https%3A%2F%2Ftravel.rakuten.co.jp%2Fshare%2Fbatch%2Frrg_pg%2Fpgenerator%2Fhotel%2Fid39%2Fall_prefectures%2Findex.html"
          aria-label="楽天トラベルの隠れ家特集で空室を確認する">空室を確認する（公式）</a>
@@ -185,18 +181,17 @@
          aria-label="日付未定で隠れ家宿を探す">日付未定で探す</a>
     </div>
 
-    <!-- もしも：インプレッションピクセル（1ページ1つ） -->
+    <!-- 計測ピクセル（1ページ1つ） -->
     <img src="//i.moshimo.com/af/i/impression?a_id=5140685&p_id=55&pc_id=55&pl_id=624" width="1" height="1" style="border:none;" alt="" loading="lazy">
 
     <p class="note">※ 公式ページで条件を入力して検索。料金/空室は随時変動します。</p>
 
-    <!-- キーワード検索フォーム（もしも経由で楽天へ） -->
     <div class="panel" style="margin-top:12px">
       <h3 style="margin-top:0">キーワードで探す</h3>
       <form id="affSearch" onsubmit="return goAffSearch()" role="search" aria-label="隠れ家宿を検索">
-        <label for="q" class="sr-only">キーワード（例：箱根 貸切風呂 / 軽井沢 ヴィラ）</label>
-        <input id="q" name="q" type="search" inputmode="search" placeholder="エリア・条件・宿名など"
-               style="width:100%;max-width:520px;padding:12px;border:1px solid var(--border);border-radius:10px;margin-right:8px">
+        <label for="q" class="sr-only">キーワード（例：箱根 露天風呂付客室 / 軽井沢 ヴィラ / 河口湖 富士山ビュー）</label>
+        <input id="q" name="q" type="search" inputmode="search" placeholder="例：箱根 露天風呂付客室／軽井沢 ヴィラ／沖縄 ヴィラ プール付"
+               style="width:100%;max-width:620px;padding:12px;border:1px solid var(--border);border-radius:10px;margin-right:8px">
         <button type="submit" class="cta" style="display:inline-flex;margin:10px 0">空室を検索（公式）</button>
       </form>
     </div>
@@ -204,7 +199,6 @@
 
   <hr>
 
-  <!-- 2. 人気エリア -->
   <section id="regions" class="panel" aria-labelledby="regions-title">
     <h2 id="regions-title">人気エリアの隠れ家宿</h2>
     <div class="grid">
@@ -310,7 +304,6 @@
 
   <hr>
 
-  <!-- 3. 選び方 -->
   <section id="choose" class="panel" aria-labelledby="choose-title">
     <h2 id="choose-title">隠れ家宿の選び方｜予約前チェックリスト</h2>
     <div class="grid">
@@ -345,7 +338,6 @@
 
   <hr>
 
-  <!-- 4. FAQ -->
   <section id="faq" class="panel" aria-labelledby="faq-title">
     <h2 id="faq-title">よくある質問：空室・予約・公式</h2>
 
@@ -361,7 +353,6 @@
     <p class="note" style="margin-top:18px">※ 本ページには広告（PR）リンクを含みます。内容の最新性はリンク先の公式でご確認ください。</p>
   </section>
 
-  <!-- フッター -->
   <div id="footer">
     X <a href="https://x.com/kkp_webninja" target="_blank" rel="noopener"> @kkp_webninja</a> ・
     🏯 <a href="https://kkpwebninja.com" target="_blank" rel="noopener">web忍者の本丸</a>
@@ -375,24 +366,22 @@
      aria-label="今すぐ空室を確認（公式）">今すぐ空室を確認（公式）</a>
 </div>
 
-<!-- ===== 検索送信 & 地域ボタンの強制上書き（kw.travel 版） ===== -->
+<!-- ===== 検索送信 & 地域ボタンを“ヒットしやすい語”で上書き（kw.travel 版） ===== -->
 <script>
   // もしも：どこでもリンクのベース（IDはあなたのもののまま）
   const MOSHIMO_BASE = "//af.moshimo.com/af/c/click?a_id=5140685&p_id=55&pc_id=55&pl_id=624&url=";
 
-  // ✅ 楽天の“安定”検索エンドポイント（kw.travel.rakuten.co.jp）
+  // 楽天の安定検索（kw.travel）
   function buildRakutenSearchUrl(keyword){
     const kw = (keyword || "").trim();
     if(!kw){
-      // 未入力は「隠れ家」特集トップへフェールバック
       return "https://travel.rakuten.co.jp/share/batch/rrg_pg/pgenerator/hotel/id39/all_prefectures/index.html";
     }
-    // スペースは + でも %20 でもOK。見やすさのため + に置換
     const q = encodeURIComponent(kw).replace(/%20/g, "+");
     return "https://kw.travel.rakuten.co.jp/keyword/Search.do?f_query=" + q;
   }
 
-  // 検索フォーム送信：もしも経由で楽天検索へ
+  // 検索フォーム送信
   function goAffSearch(){
     const box = document.getElementById('q');
     const target = buildRakutenSearchUrl(box ? box.value : "");
@@ -404,26 +393,25 @@
     return false;
   }
 
-  // 地域ボタンの href を確実に「地域別検索結果」に上書きする
+  // 地域ボタン：ヒットしやすい定番ワードで上書き
   (function(){
-    // URL に ?q= があれば検索欄へ反映（サイトリンク対策）
     const u = new URL(location.href);
     const kw = u.searchParams.get("q");
     if(kw){ const box = document.getElementById('q'); if(box){ box.value = kw; } }
 
     const regionMap = {
-      "atami-izu":      "熱海 伊豆 隠れ家",
-      "kusatsu":        "草津温泉 隠れ家",
-      "nasu-nikko":     "那須 日光 鬼怒川 隠れ家",
-      "hakone":         "箱根 強羅 仙石原 隠れ家",
-      "karuizawa":      "軽井沢 ヴィラ 隠れ家",
-      "kawaguchiko":    "富士五湖 河口湖 隠れ家",
-      "shirahama":      "白浜温泉 隠れ家",
-      "beppu-yufuin":   "別府 由布院 隠れ家",
-      "kurokawa":       "黒川温泉 隠れ家",
-      "hokkaido-onsen": "登別 洞爺 定山渓 隠れ家",
-      "okinawa":        "沖縄本島 恩納 読谷 隠れ家",
-      "ishigaki-miyako":"石垣島 宮古島 隠れ家"
+      "atami-izu":      "静岡 熱海 伊豆 露天風呂付客室",
+      "kusatsu":        "草津温泉 貸切風呂 露天",
+      "nasu-nikko":     "那須 高原 露天 旅館",
+      "hakone":         "箱根 露天風呂付客室 部屋露天",
+      "karuizawa":      "軽井沢 コテージ ヴィラ",
+      "kawaguchiko":    "河口湖 富士山ビュー 露天",
+      "shirahama":      "白浜温泉 オーシャンビュー 露天",
+      "beppu-yufuin":   "別府 由布院 露天 貸切",
+      "kurokawa":       "黒川温泉 離れ 露天",
+      "hokkaido-onsen": "定山渓 露天 温泉",
+      "okinawa":        "沖縄本島 ヴィラ プール付",
+      "ishigaki-miyako":"石垣島 宮古島 ヴィラ プール付"
     };
 
     function rewriteRegionLinks(){
