@@ -16,6 +16,8 @@
 <link rel="dns-prefetch" href="//i.moshimo.com">
 <link rel="preconnect" href="https://travel.rakuten.co.jp">
 <link rel="dns-prefetch" href="//travel.rakuten.co.jp">
+<link rel="preconnect" href="https://kw.travel.rakuten.co.jp">
+<link rel="dns-prefetch" href="//kw.travel.rakuten.co.jp">
 
 <!-- OGP -->
 <meta property="og:type" content="article">
@@ -174,7 +176,7 @@
     <p style="margin-top:0">楽天トラベルの『隠れ家』特集へ。日付・人数・エリアを指定して検索できます。</p>
 
     <div class="btns" role="group" aria-label="主要アクション">
-      <!-- どこでもリンク（共通ベース）。※実際の遷移は下のスクリプトで地域別に上書きします -->
+      <!-- どこでもリンク（共通ベース） -->
       <a class="cta" target="_blank" rel="nofollow noopener sponsored"
          href="//af.moshimo.com/af/c/click?a_id=5140685&p_id=55&pc_id=55&pl_id=624&url=https%3A%2F%2Ftravel.rakuten.co.jp%2Fshare%2Fbatch%2Frrg_pg%2Fpgenerator%2Fhotel%2Fid39%2Fall_prefectures%2Findex.html"
          aria-label="楽天トラベルの隠れ家特集で空室を確認する">空室を確認する（公式）</a>
@@ -183,7 +185,7 @@
          aria-label="日付未定で隠れ家宿を探す">日付未定で探す</a>
     </div>
 
-    <!-- もしもインプレッションピクセル（1ページ1つだけ） -->
+    <!-- もしも：インプレッションピクセル（1ページ1つ） -->
     <img src="//i.moshimo.com/af/i/impression?a_id=5140685&p_id=55&pc_id=55&pl_id=624" width="1" height="1" style="border:none;" alt="" loading="lazy">
 
     <p class="note">※ 公式ページで条件を入力して検索。料金/空室は随時変動します。</p>
@@ -373,19 +375,21 @@
      aria-label="今すぐ空室を確認（公式）">今すぐ空室を確認（公式）</a>
 </div>
 
-<!-- ===== 検索送信 & 地域ボタンの強制上書き（安定版） ===== -->
+<!-- ===== 検索送信 & 地域ボタンの強制上書き（kw.travel 版） ===== -->
 <script>
   // もしも：どこでもリンクのベース（IDはあなたのもののまま）
   const MOSHIMO_BASE = "//af.moshimo.com/af/c/click?a_id=5140685&p_id=55&pc_id=55&pl_id=624&url=";
 
-  // 楽天：安定検索エンドポイント（simpleSearch）
+  // ✅ 楽天の“安定”検索エンドポイント（kw.travel.rakuten.co.jp）
   function buildRakutenSearchUrl(keyword){
     const kw = (keyword || "").trim();
     if(!kw){
       // 未入力は「隠れ家」特集トップへフェールバック
       return "https://travel.rakuten.co.jp/share/batch/rrg_pg/pgenerator/hotel/id39/all_prefectures/index.html";
     }
-    return "https://travel.rakuten.co.jp/yado/simpleSearch/?keyword=" + encodeURIComponent(kw);
+    // スペースは + でも %20 でもOK。見やすさのため + に置換
+    const q = encodeURIComponent(kw).replace(/%20/g, "+");
+    return "https://kw.travel.rakuten.co.jp/keyword/Search.do?f_query=" + q;
   }
 
   // 検索フォーム送信：もしも経由で楽天検索へ
